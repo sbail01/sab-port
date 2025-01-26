@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Sabrina Bailey</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Sabrina Bailey</div>
+      <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Sabrina Bailey profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hiya, I'm</p>
+        <h1 class="title">Sabrina Bailey</h1>
+        <p class="section__text__p2">CS Student and Cybersecurity enthusiast <br /> Throw kindness around like confetti!</p>
+        <div class="btn-container">
+          <!-- <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button> -->
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://ca.linkedin.com/in/sabrina-bailey-338111193'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/sbail01?tab=repositories'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree - In Progress <br /> CompTIA Security+ - In Progress</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Awards</h3>
+              <p>Starbucks Partner of the Quarter<br />Microsoft DOT Top 3 Concept Design</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hello, I'm Sabrina Bailey, a 4th-year student at Simon Fraser University, majoring in Computing Science with a concentration in Artificial Intelligence. 
+              My academic journey is driven by a passion for blending technology and teaching to innovate solutions that enhance the quality of everyday life. 
+              By focusing on accessible and affordable technological advancements, I aim to make significant contributions that will benefit society.  
+              PLEASE NOTE THIS WEBSITE IS A WORK IN PROGRESS.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skills-sub-title">Technical Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>R</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MATLAB</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Azure</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Google Workspace</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Windows, macOS, Linux</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Soft Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Team Management</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Problem-Solving</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Team Player</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Effective Time Management</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Attention to detail</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Strong Communicator</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adaptability</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Positive Attitude</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Quick Learner</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Some of My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">DishCovery</h2>
+            <p>This study explores a novel application of artificial intelligence (AI) in culinary practices by incorporating computer vision-based image recognition and natural language processing to minimize food waste through ingredient-based recipe suggestions.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/sbail01/fruit-app'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Faux-toshop</h2>
+              <p>A homemade version of Photoshop using custom-created functions to Greyscale, Contrast, Ordered Dither, Rotation, Saturation, Resize, Rotate, Flip Vertically and Horizontally, and Auto-level for BMP files.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/sbail01/faux-toshop'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Enterprise Information Management System</h2>
+            <p>Springboot Application on render The Enterprise Information Management System is a sophisticated and secure internal enterprise solution designed to streamline and centralize the management of employee information within the organization.</p>
+
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Larry0913/CMPT276_23Fall'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">My Most Recent</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Starbucks Supervisor (SSV)</h2>
+            <p>September 2021-January 2024
+              <br />As a Starbucks Supervisor, I was responsible for managing a team of baristas, ensuring the store was running smoothly, and providing excellent customer service. I was also responsible for training new employees, creating schedules, and managing inventory. I was awarded Partner of the Quarter in 2022 and 2023. </p>
+            </p>
+          </div>
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title experience-title">Real Estate Assistant </h2>
+              <p> Octover 2018-Present
+                <br /> I have worked for multiple real estate agents completing a wide array of tasks. This job has taught me how to 
+                <br />Companies include: Keller Williams, Berkshire Hathaway</p>
+            </div>
+          </div>
+        </div>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-1"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Let's Chat!</p>
+      <h1 class="title">My Contact Information</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:sabrina_bailey@sfu.ca">Email</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://ca.linkedin.com/in/sabrina-bailey-338111193">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright © [2025] [Sabrina Bailey] All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
